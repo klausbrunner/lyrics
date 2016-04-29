@@ -1,0 +1,56 @@
+|  An attempt to create a formatted song lyrics/discography file.
+|  Special characters (only significant in first column; handle them
+|  properly or ignore rest of line):
+|
+|  \  precedes album/period id
+|  #  precedes song id
+|  |  precedes comment
+|  *  precedes item comments
+|
+|  album_id => 2 characters  (e.g. 17 or cB)
+|  song_id  => 3 characters  (e.g. 023 or 1FC)
+|  comment  => n characters
+|  reference => album_id song_id (e.g. 17023 or cB1FC)
+|
+|  Everything between the #song_id and the next #song_id or \album_id is
+|  lyrics, except lines starting with special characters. Song and album names
+|  should be unambiguous. If you enter a new album containing a song that's
+|  already somewhere else in the file, DO NOT copy-and-paste the lyrics - just
+|  leave it empty.
+|
+|  Item comments are used to store additional information about an album
+|  or a song, i.e. year of release, liner notes, reviews... Item comments about
+|  an album should appear right after the \album_id, before the first #song_id.
+|  Item comments about songs should appear right after the respective #song_id,
+|  before the lyrics.
+|  Song_ids start with 1 if the respective songs are "period" songs, i.e.
+|  not released on the album. These songs should be listed _after_ any
+|  album songs.
+|
+|
+|  EXAMPLE:
+|
+|  \00The First, Never Released, Top Secret Album
+|  *This album featuring Neil Young with Frank Sinatra was never released,
+|  *apparently due to legal problems with David Geffen.
+|  #000T-Bone
+|  *A masterpiece of contemporary poetry!
+|  got mashed potatoes
+|  ain't got no t-bone
+|  #101Northern Alaska Brings Me Down
+|  *This song can be found on "Lucky Seventeen".
+|  | empty because the song can be found on another album!
+|  \01Lucky Seventeen
+|  #000Northern Alaska Brings Me Down
+|  the sixties are gone
+|  and so are all my friends...
+|  .....
+|
+|
+|
+|
+|  Klaus A. Brunner, 1998
+
+
+
+| --------------------------------- eof --------------------------------------

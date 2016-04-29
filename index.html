@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <title>Lyrics Database</title>
+  <style type="text/css">@import "lyricstyle.css";</style>
+</head>
+<body>
+<script type="text/javascript">
+  <!--
+  function validateForm() {
+    if (document.search.pattern.value.length < 3) {
+      alert("Please enter at least one word with 3 letters.")
+      return false
+    }
+    else
+      return true
+   }
+  //-->
+</script>
+<div id="content">
+<h1>The Searchable Lyrics Database</h1>
+<table cellpadding="15">
+  <tbody>
+    <tr valign="top">
+      <td width="33%">
+      <h2><a href="songs.html">Song Index</a></h2>
+      <p>If you know a song's title and need the lyrics, choose this
+one.</p>
+      </td>
+      <td width="33%">
+      <h2><a href="albums.html">Album Index</a></h2>
+      <p>If you want the words of an entire album or period, this is
+the place to go.</p>
+      </td>
+      <td width="33%">
+      <h2>Search Lyrics</h2>
+      <form action="cgi-bin/fuzzy.cgi" method="get" name="search"
+ onsubmit="return validateForm()"> <input id="entryfield"
+ name="pattern" value="" size="25" maxlength="40" type="text"> <input
+ value="Start!" type="submit">
+        <p><label for="entryfield">Use this if you remember some lyrics
+fragments, but don't know the song's title. For best results, enter a
+phrase of about 3 words (e.g. "chasing the moonlight").</label></p>
+      </form>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<br>
+</div>
+</body>
+</html>

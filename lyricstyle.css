@@ -1,0 +1,109 @@
+/* kb's stylesheet
+   (see glish.com for css tips!)
+*/
+
+body {
+	color: black; 
+	background: white;
+	font-family:   georgia, times, serif;
+        background: #fff;
+}
+
+h1 {
+	font-size: 125%; 
+        color: #202020;
+background: white; 
+	font-family:   georgia, times, serif;
+        border-bottom:1px solid #000;
+        margin-bottom: 0;
+}
+
+h2 {
+	font-size: 104%; 
+        color: #202020;
+	font-family:   georgia, Arial, sans-serif;
+}
+
+h3 {
+	font-size: 100%; 
+        color: #202020;
+	font-family:   georgia, Arial, sans-serif;
+}
+
+.navi {
+        color: #707070;
+	font-family:   georgia, Arial, sans-serif;
+        font-weight: bold;
+        padding: 4px;
+        font-size:small; text-align:right;
+	margin-top: 0;
+        margin-bottom: 4ex;	
+}
+
+.centred { text-align: center; }
+
+a:link { 
+	color: #800000; 
+	text-decoration: none;
+}
+
+a:visited { 
+	color: #600000; 
+	text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+#content {
+	margin-right:5%;
+	margin-left:5%;
+	margin-top:2ex;
+	padding-bottom:2ex;
+	text-align:left;
+	min-width:20ex;
+}
+
+.abstract {
+	font-style: italic;
+	margin-bottom: 1ex;
+	margin-top: 1ex;
+}
+
+address {
+	font-style: normal;
+	font-size: smaller;
+}
+
+dl dt {
+	font-weight: bold;
+        font-size: 100%;
+        color: #202020;
+}
+
+
+:lang(en) > q { quotes: "\201C" "\201D" "\2018" "\2019" }
+/* :lang(de) > q { quotes: "\201E" "\201C" ???? "\2018" }  */
+
+/* drucken */
+@media print {
+	#content {
+		margin: 1ex;
+		padding: 0;
+	}
+
+        /* keine unterstreichungen bei hyperlinks */
+	abbr, acronym { 
+		border: 0;
+	}
+
+        /* im referenzteil: urls mitdrucken */
+	dl.references a[href] {
+		background-color: white; 
+		color: black; 
+		text-decoration: none;
+	}
+
+	dl.references a[href]:after {
+		content: " <" attr(href) ">";
+	}
+}
