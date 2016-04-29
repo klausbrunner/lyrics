@@ -4,7 +4,7 @@ lyrics
 Background
 ----------
 
-This code was originally written circa 1997 to create a searchable database of Neil Young's song lyrics, hosted on my private university webspace. A somewhat updated version is still running at (Human Highway)[http://www.human-highway.org/lyrics/] as of 2016. The code is unlikely to be useful these days but might serve as an interesting piece of history (if you're interested in how websites were built in the 1990s, that is).
+This code was originally written circa 1997 to create a searchable database of Neil Young's song lyrics, hosted on my private university webspace. A somewhat updated version is still running at [Human Highway](http://www.human-highway.org/lyrics/) as of 2016. The code is unlikely to be useful these days but might serve as an interesting piece of history (if you're interested in how websites were built in the 1990s, that is).
 
 Structure
 ---------
